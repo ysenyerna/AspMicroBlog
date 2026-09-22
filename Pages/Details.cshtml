@@ -1,0 +1,12 @@
+@page
+@model DetailsModel
+@{
+    ViewData["Title"] = @"MicroBlog - " + Model.post.Title;
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.post.Title</h1>
+</div>
+
+<p style="border-bottom:1px solid rgb(209, 209, 209);">@Model.post.CreatedUtc.ToString("MMMM dd, yyyy")</p>
+<p>@Model.post.Body</p>

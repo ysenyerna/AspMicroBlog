@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 0,
+    "Title": "Example Post",
+    "Body": "Hello, this is an example post!",
+    "CreatedUtc": "2026-09-22T18:31:51.4699518Z"
+  },
+  {
+    "Id": 1,
+    "Title": "Another Post",
+    "Body": "This is another example post!",
+    "CreatedUtc": "2026-09-22T18:32:03.4446972Z"
+  }
+]

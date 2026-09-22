@@ -1,0 +1,14 @@
+@model IndexModel
+
+@{
+	int id = (int)ViewData["id"]!;
+	Post post = @Model.PostData[id];
+	string url = "Details?id=" + id;
+}
+
+<!-- Display post -->
+<div class="post">
+	<a href=@(url)><h2 class="post-title">@post.Title</h2></a>
+	<p style="border-bottom:1px solid rgb(209, 209, 209);">@post.CreatedUtc.ToString("MMMM dd, yyyy")</p>
+	<p>@post.Body</p>
+</div>

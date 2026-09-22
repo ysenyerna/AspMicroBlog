@@ -4,18 +4,24 @@
     ViewData["Title"] = "Create a Post";
 }
 
+<div class="text-center">
+    <h1 class="display-4">Create a New Post</h1>
+</div>
+
 <form action="Create/CreatePost" method="post">
 
 	<div>
 		<label asp-for="Title"></label>
-		<input asp-for="Title" />
+		<br />
+		<input asp-for="Title" class="form-element" style="font-size:16pt;" />
 	</div>
 
 	<div>
-		<label asp-for="Body"></label>
-		<input asp-for="Body" type="textarea" />
+		<label asp-for="Body" style="margin-top:15px;"></label>
+		<br />
+		<textarea asp-for="Body" class="form-element"></textarea>
 	</div>
 
-	<button type="submit">Post</button>
+	<button type="submit" style="margin-top:15px;">Post</button>
 </form>
 
